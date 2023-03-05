@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+<h1>IRIS PREDICTOIN</h1>
+<form action="/predict/">
+    <table>
+        <tr>
+            <th>Sepal Lenght</th>
+            <th>Sepal Width</th>
+            <th>Petal Lenght</th>
+            <th>Petal Width</th>
+        </tr>
+        <tr>
+            <td><input type="number" name="l1" value="1.2"
+                       min="0" max="10" step="any"></td>
+            <td><input type="number" name="w1" value="1.2"
+                       min="0" max="10" step="any"></td>
+            <td><input type="number" name="l2" value="1.2"
+                       min="0" max="10" step="any"></td>
+            <td><input type="number" name="w2" value="1.2"
+                       min="0" max="10" step="any"></td>
+        </tr>
+
+
+    </table>
+
+    <input type="submit" value="PREDİCT">
+</form>
+
+<p>If you click the "PREDİCT" button, the form-data will be
+    sent to a page called "/predict".</p>
+
+
+</body>
+</html>
+
